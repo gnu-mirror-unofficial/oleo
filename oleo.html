@@ -1,67 +1,35 @@
-<!-- Parent-Version: 1.52 $ -->
-
-<!-- This is the template document for GNU web pages.  We use
-     server side includes (#include) for common elements, for
-     instance, the very first line of the file.  If you're reading
-     this in its expanded form, you can retrieve the original source,
-     with the SSI statements intact, from
-     
-http://web.cvs.savannah.gnu.org/viewvc/*checkout*/www/server/standards/boilerplate.html?root=www&content-type=text%2Fplain
--->
-
-<!-- Instructions for adapting this boilerplate to a new project: -->
-
-<!-- 1. In the line above starting "Parent-Version:", remove the
-        "$Revision...$" from around the revision number,
-        leaving just Parent-Version: and the number. -->
-
-<!-- 2. Replace "Oleo" with the name of your project.
-        You should be able to do this with search and replace;
-        making sure that the search is case insensitive and
-        that the case of the replacement matches the case
-        of the string found. In Emacs, query-replace will do this
-        when case-fold-search and case-replace are both non-nil
-        and both search and replacement string are given in lower case. -->
-
-<!-- 3. Of course update the actual information according to your project,
-        such as mailing lists, project locations, and maintainer name.  -->
-
-<!-- 4. You can use the patch-from-parent script to semi-automate
-        merging future changes to the boilerplate with your file:
-        
-http://web.cvs.savannah.gnu.org/viewvc/*checkout*/www/server/standards/patch-from-parent?root=www&content-type=text%2Fplain
--->
-
-<!--#include virtual="/server/header.html" -->
-<title>Oleo - GNU Project - Free Software Foundation (FSF)</title>
+<!--#include virtual="/server/html5-header.html" -->
+<!-- Parent-Version: 1.79 -->
+<title>Oleo - GNU Project - Free Software Foundation)</title>
+<!--#include virtual="/server/gnun/initial-translations-list.html" -->
 <!--#include virtual="/server/banner.html" -->
 <h2>Oleo</h2>
 
 <p>
 Oleo has for a long time been GNU's spreadsheet.
 Now there's not only Oleo but also Gnumeric, the
-<A HREF="http://www.gnome.org">GNOME</A> spreadsheet.
+<a href="http://www.gnome.org">GNOME</a> spreadsheet.
 Gnumeric is a full featured spreadsheet,
 aiming to compete with commercial applications,
 and well integrated with GNOME.
-Oleo is a light-weight spreadsheet that'll work in almost any environment.
-<P>
+Oleo is a light-weight spreadsheet that'll work in almost any environment.</p>
+<p>
 Oleo features a curses based interface (character mode),
 and also a LessTif (Motif) based graphical user interface.
-A screenshot of the Motif GUI is <A HREF="oleo1.png">here (11K png file)</A>.
+A screenshot of the Motif GUI is <a href="oleo1.png">here (11K png file)</a>.</p>
 
 
-<!-------------------------------------------------------------------------------------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <h3>Downloading Oleo</h3>
 
-<P>
+<p>
 The current development release of oleo is 
-<A HREF="http://ftp.gnu.org/pub/gnu/oleo/oleo-1.99.16.tar.gz">1.99.16</A> .
+<a href="http://ftp.gnu.org/pub/gnu/oleo/oleo-1.99.16.tar.gz">1.99.16</a>.</p>
 <!--
 Version 1.99.16 is also available from the regular GNU FTP server at
-<A HREF="http://ftp.gnu.org/pub/gnu/oleo/oleo-1.99.14.tar.gz">
-http://ftp.gnu.org/pub/gnu/oleo/oleo-1.99.14.tar.gz</A> .
+<a href="http://ftp.gnu.org/pub/gnu/oleo/oleo-1.99.14.tar.gz">
+http://ftp.gnu.org/pub/gnu/oleo/oleo-1.99.14.tar.gz</a> .
 -->
 
 <p>Oleo can be found on the main GNU ftp server:
@@ -72,106 +40,105 @@ please
 <a href="http://ftpmirror.gnu.org/oleo/">use a mirror</a> if possible.</p>
 
 
-<!-------------------------------------------------------------------------------------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <h3>Current Development</h3>
 
-<P>
+<p>
 We're working on an upcoming Oleo 2.0 release.
-The current snapshots already implement the following 2.0 features :
-<UL>
-<LI> Motif/<A HREF="http://www.lesstif.org">LessTif</A> interface,
-     based on the <A HREF="http://www.lesstif.org/Xbae.html">Xbae</A>Matrix widget
-<LI> Access to the statistics functions of the GSL
-     (<A HREF="http://sources.redhat.com/gsl/">GNU Scientific Library</A>).
-<LI> Support for opening multiple spreadsheets, each in a Motif window,
-     at the same time.
-<LI> device independent graphics through
-     <A HREF="http://www.gnu.org/software/plotutils/plotutils.html">GNU plotutils</A>,
-     replacing the older gnuplot interface
-<LI> more portable build through autoconf and automake
-<LI> internationalised (i18n)
-<LI> updated documentation
-<LI> ANSI C code (removed K&amp;R stuff)
-<LI> filter mode (read file from stdin, save to stdout)
-<LI> better SYLK support
-<LI> improved printing (PostScript and PCL)
-<LI> database access (MySQL and DBF files)
-<LI> SciPlot graphics (Motif/LessTif only)
-<LI> cleaned up internals
-<LI> runs in character mode as well as in a GUI
-<LI> interface to <A HREF="http://www.cups.org">CUPS</A> to browse available printers
-</UL>
-<P>
+The current snapshots already implement the following 2.0 features:</p>
+
+<ul>
+<li> Motif/<a href="http://www.lesstif.org">LessTif</a> interface,
+     based on the <a href="http://www.lesstif.org/Xbae.html">Xbae</a>Matrix widget</li>
+<li> Access to the statistics functions of the GSL
+     (<a href="http://sources.redhat.com/gsl/">GNU Scientific Library</a>).</li>
+<li> Support for opening multiple spreadsheets, each in a Motif window,
+     at the same time.</li>
+<li> device independent graphics through
+     <a href="http://www.gnu.org/software/plotutils/plotutils.html">GNU plotutils</a>,
+     replacing the older gnuplot interface</li>
+<li> more portable build through autoconf and automake</li>
+<li> internationalised (i18n)</li>
+<li> updated documentation</li>
+<li> ANSI C code (removed K&amp;R stuff)</li>
+<li> filter mode (read file from stdin, save to stdout)</li>
+<li> better SYLK support</li>
+<li> improved printing (PostScript and PCL)</li>
+<li> database access (MySQL and DBF files)</li>
+<li> SciPlot graphics (Motif/LessTif only)</li>
+<li> cleaned up internals</li>
+<li> runs in character mode as well as in a GUI</li>
+<li> interface to <a href="http://www.cups.org">CUPS</a> to browse available printers</li>
+</ul>
+<p>
 Details about recent changes are available in the ChangeLog file.
 There is a manually updated version of ChangeLog
-<A HREF="/software/oleo/ChangeLog">here</A>,
+<a href="/software/oleo/ChangeLog">here</a>,
 you can get the latest version from CVSWEB using a URL like
-<A HREF="http://subversions.gnu.org/cgi-bin/cvsweb/~checkout~/oleo/ChangeLog?rev=1.150">
-http://subversions.gnu.org/cgi-bin/cvsweb/~checkout~/oleo/ChangeLog?rev=1.150</A>
-but then you need to know the latest version number (1.150 at the time I write this).
+<a href="http://subversions.gnu.org/cgi-bin/cvsweb/~checkout~/oleo/ChangeLog?rev=1.150">
+http://subversions.gnu.org/cgi-bin/cvsweb/~checkout~/oleo/ChangeLog?rev=1.150</a>
+but then you need to know the latest version number (1.150 at the time I write this).</p>
 
 
-<!-------------------------------------------------------------------------------------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <h3>Documentation</h3>
 
-<P>
-The Oleo documentation is now also available <A HREF="http://www.gnu.org/software/oleo/doc/oleo.html">online</A>.
+<p>
+The Oleo documentation is now also available <a href="http://www.gnu.org/software/oleo/doc/oleo.html">online</a>.</p>
 
 
-<!-------------------------------------------------------------------------------------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <h3>Downloading Oleo</h3>
 
 
-<P>
+<p>
 Intermediate versions are available through anonymous CVS,
 and their source can be browsed online through
 <a href="http://subversions.gnu.org">the cvs-web interface</a>.
 The complete sources to Oleo are in the GNU CVS server at subversions.gnu.org.
 You can read more about this on
-<A HREF="http://www.gnu.org/software/devel.html">
-http://www.gnu.org/software/devel.html</A> .
+<a href="http://www.gnu.org/software/devel.html">
+http://www.gnu.org/software/devel.html</a>.</p>
 
 
-
-<!-------------------------------------------------------------------------------------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <h3>Mailing lists</h3>
 
-<P>
-This mailing list concern oleo :
-<UL>
-<LI> <I>bug-oleo@gnu.org</I> for reporting (and reading about) bugs in oleo.
-     <BR>
-     <A HREF="mailto:bug-oleo@gnu.org">send mail to bug-oleo@gnu.org</A>
-     <BR>
-     <A HREF="mailto:bug-oleo-request@gnu.org">subscribe to bug-oleo
-       (be sure to put the word subscribe in your subject line)</A>
-</UL>
-<P>
-The GNU mailing lists maintain <B>archives</B> of the messages sent to it.
+<p>
+These mailing list concern oleo:</p>
+<ul>
+<li> <i>bug-oleo@gnu.org</i> for reporting (and reading about) bugs in oleo,</li>
+<li> <a href="mailto:bug-oleo@gnu.org">send mail to bug-oleo@gnu.org</a>,</li>
+<li> <a href="mailto:bug-oleo-request@gnu.org">subscribe to bug-oleo</a>
+       (be sure to put the word subscribe in your subject line).</li>
+</ul>
+<p>
+The GNU mailing lists maintain <b>archives</b> of the messages sent to it.
 The archives can be queried by E-mails whose subject starts with
-the word <I>archive</I>.
-By sending a message with subject <I>archive help</I> to
-<A HREF="mailto:bug-oleo-request@gnu.org">bug-oleo-request@gnu.org</A>
+the word <i>archive</i>.
+By sending a message with subject <i>archive help</i> to
+<a href="mailto:bug-oleo-request@gnu.org">bug-oleo-request@gnu.org</a>
 you will ask the server to send you a message with instructions for
-working with the archive server.
-<P>
+working with the archive server.</p>
+<p>
 We recommend that you also send a message with the subject
-<I>archive ls latest</I>
-as "latest" is the name of a directory.
-<P>
+<i>archive ls latest</i>
+as "latest" is the name of a directory.</p>
+<p>
 Our TODO and ChangeLog files are now web-accessible :
-<A HREF="http://www.gnu.org/software/oleo/TODO">TODO</A> ,
-<A HREF="http://www.gnu.org/software/oleo/ChangeLog">ChangeLog</A> .
-<P>
+<a href="http://www.gnu.org/software/oleo/TODO">TODO</a> ,
+<a href="http://www.gnu.org/software/oleo/ChangeLog">ChangeLog</a> .</p>
+<p>
 Please note that LessTif is a freely available replacement for OSF/Motif.
 LessTif is licensed by the GNU LGPL and can be obtained from
-<A HREF="http://www.lesstif.org">www.lesstif.org</A>.
+<a href="http://www.lesstif.org">www.lesstif.org</a>.</p>
 
 
-<!-------------------------------------------------------------------------------------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <h3>Getting involved</h3>
 
@@ -235,63 +202,48 @@ Software Foundation; either version&nbsp;3 of the License, or (at your
 option) any later version.</p>
 
 
-<!-- If needed, change the copyright block at the bottom. In general,
-     all pages on the GNU web server should have the section about
-     verbatim copying.  Please do NOT remove this without talking
-     with the webmasters first.
-     Please make sure the copyright date is consistent with the document
-     and that it is like this: "2001, 2002", not this: "2001-2002". -->
 </div><!-- for id="content", starts in the include above -->
 <!--#include virtual="/server/footer.html" -->
 <div id="footer">
+<div class="unprintable">
 
 <p>Please send general FSF &amp; GNU inquiries to
 <a href="mailto:gnu@gnu.org">&lt;gnu@gnu.org&gt;</a>.
 There are also <a href="/contact/">other ways to contact</a>
-the FSF.<br />
-Please send broken links and other corrections or suggestions to
-<a href="mailto:bug-oleo@gnu.org">&lt;bug-oleo@gnu.org&gt;</a>.</p>
+the FSF.  Broken links and other corrections or suggestions can be sent
+to <a href="mailto:bug-oleo@gnu.org">&lt;bug-oleo@gnu.org&gt;</a>.</p>
+</div>
 
-<p>Please see the <a
-href="/server/standards/README.translations.html">Translations
-README</a> for information on coordinating and submitting translations
-of this article.</p>
+<!-- Regarding copyright, in general, standalone pages (as opposed to
+     files generated as part of manuals) on the GNU web server should
+     be under CC BY-ND 4.0.  Please do NOT change or remove this
+     without talking with the webmasters or licensing team first.
+     Please make sure the copyright date is consistent with the
+     document.  For web pages, it is ok to list just the latest year the
+     document was modified, or published.
+     
+     If you wish to list earlier years, that is ok too.
+     Either "2001, 2002, 2003" or "2001-2003" are ok for specifying
+     years, as long as each year in the range is in fact a copyrightable
+     year, i.e., a year in which the document was published (including
+     being publicly visible on the web or in a revision control system).
+     
+     There is more detail about copyright years in the GNU Maintainers
+     Information document, www.gnu.org/prep/maintain. -->
 
 <p>Copyright &copy; 2010 Free Software Foundation, Inc.</p>
 
-<p>Verbatim copying and distribution of this entire article are
-permitted worldwide, without royalty, in any medium, provided this
-notice, and the copyright notice, are preserved.</p>
+<p>This page is licensed under a <a rel="license"
+href="http://creativecommons.org/licenses/by-nd/4.0/">Creative
+Commons Attribution-NoDerivatives 4.0 International License</a>.</p>
 
-<p>Updated:
+<!--#include virtual="/server/bottom-notes.html" -->
+
+<p class="unprintable">Updated:
 <!-- timestamp start -->
-$Date: 2010/09/08 13:25:26 $
+$Date: 2016/05/11 19:29:49 $
 <!-- timestamp end -->
 </p>
-</div>
-
-<div id="translations">
-<h4>Translations of this page</h4>
-
-<!-- Please keep this list alphabetical by language code.
-     Comment what the language is for each type, i.e. de is German.
-     Write the language name in its own language (Deutsch) in the text.
-     If you add a new language here, please
-     advise web-translators@gnu.org and add it to
-      - /home/www/html/server/standards/README.translations.html
-      - one of the lists under the section "Translations Underway"
-      - if there is a translation team, you also have to add an alias
-      to mail.gnu.org:/com/mailer/aliases
-     Please also check you have the language code right; see:
-     http://www.loc.gov/standards/iso639-2/php/code_list.php
-     If the 2-letter ISO 639-1 code is not available,
-     use the 3-letter ISO 639-2.
-     Please use W3C normative character entities. -->
-
-<ul class="translations-list">
-<!-- English -->
-<li><a href="oleo.html">English</a>&nbsp;[en]</li>
-</ul>
 </div>
 </div>
 </body>
